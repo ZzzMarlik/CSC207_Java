@@ -1,0 +1,1 @@
+Brush initial price: 10.0

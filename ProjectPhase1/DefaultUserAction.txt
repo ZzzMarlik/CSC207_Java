@@ -1,0 +1,4 @@
+receiver scan-in view-location view-cost view-price-history view-current-price order
+cashier scan-out view-sale-date order
+reshelver view-location change-location view-order-history order view-quantity insert-section-on-section insert-section-on-product view-total-order-history
+manager view-pending-order view-revenue view-profit change-price set-discount order view-store add-action-to-user delete-action-from-user

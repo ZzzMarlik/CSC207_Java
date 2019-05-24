@@ -1,0 +1,94 @@
+****************** Today is 2017-01-05 ******************
+>>>>>>>>>> manager , log-out
+>>>>>>>>>> receiver , scan-in , 10 , 072385901722 , Beef
+>>>>>>>>>> receiver , log-in
+>>>>>>>>>> receiver , log-in
+>>>>>>>>>> receiver , order , 10 , 072385901722 , Beef
+>>>>>>>>>> receiver , order , 20 , 072385901722 , Beef
+>>>>>>>>>> receiver , order , 100 , 03383300528 , Pear , Fruit Grocery
+>>>>>>>>>> receiver , view-cost , Apple
+>>>>>>>>>> receiver , view-price-history , Bed
+>>>>>>>>>> receiver , view-current-price , Bed
+>>>>>>>>>> manager , log-in
+>>>>>>>>>> manager , set-discount , Bed , 0.5 , 2017-01-05 , 2017-01-07
+>>>>>>>>>> cashier , log-in
+>>>>>>>>>> cashier , view-sale-date , Bed
+>>>>>>>>>> receiver , view-price-history , Bed
+>>>>>>>>>> receiver , view-current-price , Bed
+>>>>>>>>>> manager , view-revenue
+>>>>>>>>>> manager , view-profit
+>>>>>>>>>> cashier , scan-out , 1 , 027773009825 , Bed
+>>>>>>>>>> manager , view-revenue
+>>>>>>>>>> manager , view-profit
+>>>>>>>>>> reshelver , log-in
+>>>>>>>>>> receiver , view-location , Pork
+Pork's location is in Aisle 1
+>>>>>>>>>> reshelver , change-location , Pork , Aisle 2
+>>>>>>>>>> receiver , view-location , Pork
+Pork's location is in Aisle 1
+>>>>>>>>>> reshelver , view-order-history , Beef
+>>>>>>>>>> reshelver , view-total-order-history
+>>>>>>>>>> manager , view-pending-order
+>>>>>>>>>> reshelver , view-quantity , Pear
+>>>>>>>>>> receiver , scan-in , 10 , 072385901722 , Beef
+>>>>>>>>>> receiver , scan-in , 100 , 03383300528 , Pear , 2 , 5 , Fruit , 50 , Aisle 2 , Fruit Grocery
+>>>>>>>>>> manager , view-pending-order , Pear
+>>>>>>>>>> reshelver , view-quantity , Pear
+>>>>>>>>>> cashier , view-sale-date , Pear
+>>>>>>>>>> receiver , view-price-history , Pear
+>>>>>>>>>> receiver , view-current-price , Pear
+>>>>>>>>>> receiver , view-location , Pear
+no such product in store
+>>>>>>>>>> cashier , scan-out , 100 , 03383300528 , Pear
+>>>>>>>>>> manager , view-pending-order , Pear
+>>>>>>>>>> reshelver , view-quantity , Pear
+>>>>>>>>>> cashier , scan-out , 100 , 03383300528 , Pear
+>>>>>>>>>> reshelver , insert-section-on-section , HealthyFood , Food , Vegetable , Fruit
+>>>>>>>>>> reshelver , insert-section-on-product , RawMeat , Meat , Beef
+2017-01-05 ends now
+>>>>>>>>>> receiver , view-locationPork
+>>>>>>>>>> receiver , view-locationPork
+>>>>>>>>>> receiver , view-locationPork
+>>>>>>>>>> receiver , view-locationPork
+>>>>>>>>>> receiver , view-locationPork
+>>>>>>>>>> receiver , view-locationPork
+>>>>>>>>>> receiver , view-locationPork
+>>>>>>>>>> receiver , view-locationPork
+>>>>>>>>>> receiver , view-locationPork
+>>>>>>>>>> receiver , view-locationPork
+>>>>>>>>>> receiver , view-location , Pork
+Pork's location is in Aisle 1
+>>>>>>>>>> receiver , view-location , Pork
+Pork's location is in Aisle 1
+>>>>>>>>>> receiver , view-location , Pork
+Pork's location is in Aisle 1
+>>>>>>>>>> receiver , view-location , Pork
+Pork's location is in Aisle 1
+>>>>>>>>>> receiver , view-location , Pork
+Pork's location is in Aisle 1
+>>>>>>>>>> receiver , view-location , Apple
+Apple's location is in Aisle 3
+>>>>>>>>>> receiver , view-location , Apple
+Apple's location is in Aisle 3
+>>>>>>>>>> receiver , view-location , Pork
+Pork's location is in Aisle 1
+>>>>>>>>>> receiver , view-location , 
+>>>>>>>>>> receiver , view-location , 
+>>>>>>>>>> receiver , view-location , Enter your title
+no such product in store
+>>>>>>>>>> receiver , view-location , Enter your title
+no such product in store
+>>>>>>>>>> receiver , view-location , Enter your title
+no such product in store
+>>>>>>>>>> receiver , view-location , Apple
+Apple's location is in Aisle 3
+>>>>>>>>>> receiver , view-location , BRROM
+no such product in store
+>>>>>>>>>> receiver , view-location , broom
+no such product in store
+>>>>>>>>>> receiver , view-location , Broom
+Broom's location is in Aisle 1
+>>>>>>>>>> receiver , view-location , Apple
+Apple's location is in Aisle 3
+>>>>>>>>>> receiver , view-location , Pork
+Pork's location is in Aisle 1

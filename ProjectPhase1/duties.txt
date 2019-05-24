@@ -1,0 +1,73 @@
+************* IMPORTANT **********
+My name is Haolin Zhang, when I represented my whole team to do the first
+project git push, my author email was my gmail by mistake. Then after that,
+I changed my default author email to my UofT email and use it in later pushes.
+
+********** Team Member Duty **********
+1. Haolin Zhang
+- OrderManager.java
+- CheckActionObserver.java
+- WithoutCheckObserver.java
+- StoreSection.java
+- Store.java
+- In EventOperator.java, I am responsible for the following methods:
+  1. insertSection()
+  2. insertSectionOnProduct()
+  3. insertSectionOnSection()
+  4. viewTotalOrderHistory()
+  5. viewOrderHistory()
+  6. viewQuantity()
+  7. viewLocation()
+  8. viewSaleDate()
+  9. order()
+  10. changeLocation()
+  11. changePrice()
+  12. manualOrderCheck()
+  13. noProductNotify()
+- EventFrame
+- InsertSectionFrame
+- LoginFrame
+- ScanInNewFrame
+- uml of above code
+
+2. Make Zhang
+- StoreBuilder.java
+- FileExistChecker.java
+- FIleLineAppender.java
+- FileLineDeleter.java
+- FileModifier.java
+- FileToStringTransformer.java
+- DefaultUserAction.txt
+- events.txt
+- help.txt
+- start.txt
+- EventFrame
+- InsertSectionFrame
+- LoginFrame
+- ScanInNewFrame
+- uml of above code
+
+3. Ziyue Xu
+- Aisle.java
+- Product.java
+- DayProcessor.java
+- OperatingSystem.java
+- EventOperator (Because this is class is big, Two members collaborate with each other)
+  I am responsible for following methods:
+  1. Constructor
+  2. action()
+  3. scanIn()
+  4. scanOut()
+  5. viewCost()
+  6. viewPriceHistory()
+  7. viewCurrentPrice()
+  8. viewPendingOrder()
+  9. viewRevenue()
+  10. viewProfit()
+  11. setDiscount()
+  12. receiveCheck()
+- EventFrame
+- LoginFrame
+- ScanInNewFrame
+- ConfirmFrame
+- uml of above code

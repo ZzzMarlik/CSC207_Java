@@ -1,0 +1,4 @@
+Apple initial price: 2.0
+Apple initial price: 2.0
+Apple initial price: 2.0
+manager , change-price , without-sale price : 10.0 , sale price : 10.0

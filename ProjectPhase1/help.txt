@@ -1,0 +1,357 @@
+FOR PHASE 2:
+
+Please run the program by using IntelliJ, Thanks!
+
+Step 1: Run the StoreStimulation.java under the frontEnd package and the program will start.
+
+(The inventory would be initialized by the instruction from start.txt file.
+ The distribution of actions for each employees stored in DefaultUserAction.txt file.
+ If you want to make any changes in start.txt/DefaultUserAction.txt file or create
+ your own files, please carefully follow the instruction of below.)
+
+Step 2: After running the program, you will see a log-in frame show up on your screen.
+        There are four valid job positions(manager/receiver/cashier/reshelver) you could enter,
+        then click the log-in button.
+        Be careful all the words should be with lower case!
+
+Step 3: Now you enter the working frame! Your working frame is depending on the position you
+        choose. Each frame should have different actions that only belongs to itself, and each
+        row represents one type of action. If you want to play with any actions, please enter
+        the required information in the textField and click the button on the right.
+        And we kindly provide simple instructions of the inputs in each textField.
+        But there are some formats that may help you to play with our program better:
+
+        1.Product name usually begin with the Capital letter.
+        2.UPC should be 12-digits numbers and you could find all original products' UPCs in
+        the start.txt file.
+        3.Discount ratio should be a double with range 0 ~ 1.
+        4.Dates should be in form as YYYY-MM-DD or YYYY-M-D.
+        5.If you want to order new products, you can simply use the order button and when you
+        scan-in the new products, there would be a new window that let you enter all the information.
+        6.Reshelver now could insert new sections with exited sections or products, when you click
+        the insert-section button there will be a new window show up. The top part stimulate the tree
+        structure of all the sections in the store.
+        And you can insert new sections by using the bottom buttons, remember to click view-tree to
+        get the new section structure you formed.
+        7.Manager now can assign/delete actions to others(self included) but the new actions will
+        only show up after you re-enter the frame.
+        8.There are three different buttons on the bottom of the main frame, and each of them
+        has their own functionality.
+
+        First is the "Restart as new" button, it will clear all the actions and related changes
+        you made. And when you run the program again, the store will return to its initial state,
+        which is formed by start.txt file.
+
+        Second is the "Exit" button, it will save all the actions/changes you made and regard today
+        is end. When you run the program again, it regards that you start a new day and the store
+        will look like exactly same as what you end for yesterday.
+
+        Last one is "Logout" button, it will let you logout from the current job position frame,
+        and return to the login frame for exchanging to other positions. It will regard you still
+        work on the same day unless you click the "Exit" button.
+
+Hope you will like our program and enjoy playing with it :)
+------------------------------------------Separate Line---------------------------------------------
+
+FOR PHASE 1:
+
+The Start of the program:
+Please run the program by using IntelliJ, Thanks!
+Run the OperatingSystem.java under the frontEnd package and the program will start.
+The inventory would be initialized by the instruction from start.txt file.
+The distribution of actions for each employees stored in DefaultUserAction.txt file.
+And the system will automatically execute all the actions from the events.txt file.
+(If you want to make any changes in start/events/DefaultUserAction.txt file or create
+your own files, please carefully follow the instruction of below.)
+All details of the latest information of the store inventory will be printed to screen
+after running main methods in OperatingSystem.java.
+
+Warning: Please do not delete any directory and please do not delete any file unless
+you create a new one with the same name to replace it.
+
+Instruction for start.txt
+//The start.txt is the file that set the initial state of our store
+
+//Example of start.txt
+
+Inventory , Food , Tool , Furniture
+Food , Meat , Vegetable , Fruit
+Tool , Cleaning Tool , Kitchen Tool , Painting Tool
+Furniture , Bedroom , Living Room , Washroom
+***** Aisle *****
+Aisle 1
+Aisle 2
+Aisle 3
+Aisle 4
+Aisle 5
+***** Product *****
+40 , 064992510121 , Pork , 6 , 10 , Meat , 20 , Aisle 1 , Butcher
+50 , 072385901722 , Beef , 10 , 15 , Meat , 30 , Aisle 1 , Butcher
+60 , 015000076009 , Carrot , 2 , 5 , Vegetable , 35 , Aisle 2 , Green Grocery
+55 , 033383004693 , Apple , 1 , 2 , Fruit , 20 , Aisle 3 , Fruit Grocery
+40 , 033486390212 , Banana , 2 , 3.5 , Fruit , 30 , Aisle 4 , Fruit Grocery
+30 , 071798007007 , Broom , 5 , 10 , Cleaning Tool , 10 , Aisle 1 , Canadian Tire
+40 , 078731350947 , Spoon , 3 , 5 , Kitchen Tool , 20 , Aisle 3 , Canadian Tire
+35 , 736658980364 , Brush , 7 , 10 , Painting Tool , 15 , Aisle 3 , Canadian Tire
+20 , 027773009825 , Bed , 90 , 200 , Bedroom , 10 , Aisle 2 , Sleep Country
+25 , 847254089571 , Sofa , 200 , 350 , Living Room , 15 , Aisle 4 , Sleep Country
+10 , 032578274892 , Bathtub , 150 , 300 , Washroom , 5 , Aisle 5 , Canadian Tire
+
+For all the lines from the beginning of the file and the line above “***** Aisle *****”:
+They are the representation of our inventory’s sections.
+The first word in each line represents the super section and the following words are all
+the subsections it contains (separate by “ , ”)
+For example, the line “Inventory , Food , Tool , Furniture” means Inventory is a super
+section which contains Food, Tool, Furniture as its subsections and so on.
+Notice: You should not delete a section that is already existed, since the related
+products would lose their original section belonging.
+
+For all the lines from the “***** Aisle *****”  to the line above “***** Product *****”:
+each line represent an Aisle with its number.
+i.e. Aisle 1 means we initialize an Aisle 1 in the inventory.
+Notice: You should not delete a section that is already existed, since the related
+products will lose their original aisle belonging.
+
+For the lines from the “***** Product *****” to the end of the file:
+each line describes a product information.
+and the general format is : quantity , upc , productName , cost , price , section , threshold , aisle , distributor(separate in “ , ”)
+for example: 40 , 064992510121 , Pork , 6 , 10 , Meat , 20 , Aisle 1 , Butcher
+which means you generate 40 units of Pork and its up is 064992510121 and cost is 6,
+price is 10, threshold is 20, placed in Aisle 1 and its distributor is Butcher.
+//We have created some products for testing, and you could make more by following the given format.
+
+Instruction for DefaultUserAction.txt
+
+//Example of DefaultUserAction
+receiver scan-in view-location view-cost view-price-history view-current-price order
+cashier scan-out view-sale-date order
+reshelver view-location change-location view-order-history order view-quantity insert-section-on-section insert-section-on-product order view-total-order-history
+manager view-pending-order view-revenue view-profit change-price set-discount order
+
+This is the file that describes different employees’ abilities(from handout2) and
+they can’t do the actions that they are not assigned.
+Since all the actions and the corresponding type of employees are restricted by
+the handout, and you should not change it.
+But the format is employeeType actions (separate in “ “)
+i.e. cashier scan-in check-date means cashier can scan-in and check-date
+but he/she can’t do any other things.
+We make it only because it will help users easily understand different
+employees’ job and give them the summary of what can they do with the program.
+And it will also be useful for the future design of adding more actions.
+
+Instruction for events.txt
+//Even though the handout said for all the actions such as view current prices
+of certain products should be input manually, we also have all the actions
+included in our events files in order to provide TAs examples how the format looks and
+easier to test our functionality.
+
+//Example of events.txt
+restart
+2017-01-05
+manager , log-out
+receiver , scan-in , 10 , 072385901722 , Beef
+receiver , log-in
+receiver , log-in
+receiver , order , 10 , 072385901722 , Beef
+receiver , order , 20 , 072385901722 , Beef
+receiver , order , 100 , 03383300528 , Pear , Fruit Grocery
+receiver , view-cost , Apple
+receiver , view-price-history , Bed
+receiver , view-current-price , Bed
+manager , log-in
+manager , set-discount , Bed , 0.5 , 2017-01-05 , 2017-01-07
+cashier , log-in
+cashier , view-sale-date , Bed
+receiver , view-price-history , Bed
+receiver , view-current-price , Bed
+manager , view-revenue
+manager , view-profit
+cashier , scan-out , 1 , 027773009825 , Bed
+manager , view-revenue
+manager , view-profit
+reshelver , log-in
+receiver , view-location , Pork
+reshelver , change-location , Pork , Aisle 2
+receiver , view-location , Pork
+reshelver , view-order-history , Beef
+reshelver , view-total-order-history
+manager , view-pending-order
+reshelver , view-quantity , Pear
+receiver , scan-in , 10 , 072385901722 , Beef
+receiver , scan-in , 100 , 03383300528 , Pear , 2 , 5 , Fruit , 50 , Aisle 2 , Fruit Grocery
+manager , view-pending-order , Pear
+reshelver , view-quantity , Pear
+cashier , view-sale-date , Pear
+receiver , view-price-history , Pear
+receiver , view-current-price , Pear
+receiver , view-location , Pear
+cashier , scan-out , 100 , 03383300528 , Pear
+manager , view-pending-order , Pear
+reshelver , view-quantity , Pear
+cashier , scan-out , 100 , 03383300528 , Pear
+
+For the events.txt, we provide two start-model choices for customers.
+First, if you include “restart” in the first line of the events.txt, the system will
+clear all existed record and regard it’s the first time you run the program.
+And the inventory would be formatted by the start.txt file.
+
+If you don’t include the “restart”, the first line will be the dates
+in the format of year-month-date (i.e. 2017-07-19) and the system will load
+the information from the previous day.
+Notice: you could only set the valid date which means if you start with 2017-01-05
+and you must enter future dates.
+We assume the user could only stimulate one day’s events, and they can’t change the events
+for the existed date unless they enter restart in the beginning of the file.
+
+If you want to test the serializable, you could simply change the date
+to the next date, and see the how the inventory looks.
+And all the happened events and its results will record into the log.txt file.
+
+After those two lines, the rest of the files should be all user’s actions,
+and we divided those actions into four parts.
+The general format should be employeeType , Action , ……. (separate in “ , ”)
+Notice: All employee must log in first and start to make actions.
+The format of log-in is: employeeType , log-in    i.e. receiver , log-in
+which means the receiver has logged into the system and he/she would have the right to work.
+And they can only work with their own actions. (See Instruction for DefaultUserAction.txt)
+Be careful, All upcs are unique and only belongs to it corresponding product, please don't mix it.
+
+For receiver:
+1.receiver could scan-in products whether they are already existed or new for the inventory.
+
+Format(for already existed products) : receiver , scan-in , quantity , upc , productName (separate by “ , ”)
+e.g. receiver , scan-in , 10 , 064992510121 , Pork
+which means receiver scan-in 10 Pork to the inventory.
+
+Format(for new products) : receiver , scan-in , quantity , upc , productName , cost , price , superSection , threshold , aisleNumber (separate by “ , ”)
+e.g. receiver , scan-in , 100 , 03383300528 , Pear , 2 , 5 , Fruit , 50 , Aisle 2
+which means receiver scan-in 100 Pears to the inventory and its upc is 03383300528,
+cost is 2, price is 5, section is Fruit, threshold is 50 and placed in Aisle 2.
+
+Warning:
+1.receiver can’t scan-in products that belong to not existed section/aisle.
+If you want to do that, you must create the section/aisle in our start.txt file first.
+2.receiver only can scan-in products that have been ordered.
+3.receiver must scan-in the correct quantity of the ordered products.
+4.When scan-in new products, remember to input all necessary information.
+
+2.receiver could view all exited products’ location (which aisle they belong to)
+Format : receiver , view-location , productName (separate by “ , ”)
+e.g. receiver , view-location , Pork
+which means receiver will find where is the Pork in the inventory.
+Notice: You should not view the location of the items that are not in store.
+
+3.receiver could view all exited products’ cost
+Format : receiver , view-cost , productName (separate by “ , ”)
+e.g. receiver , view-cost , Pork
+which means receiver view the cost of Pork.
+Notice: You should not view the cost of the items that are not in store.
+
+4.receiver could view all existed products’ current price
+Format : receiver , view-current-price , productName (separate by “ , ”)
+e.g. receiver , view-current-price , Pork
+which means receiver view the current price of Pork.
+Notice: You should not view the current price of the items that are not in store.
+
+5.receiver could view all existed products’ price history
+Format : receiver , view-price-history , productName (separate by “ , ”)
+e.g. receiver , view-price-history , Pork
+which means receiver view the price history of Pork.
+Notice: You should not view the price history of the items that are not in store.
+
+5.receiver could manually order products
+*There are two cases for manually order:
+ Case1: Manually order already existed Product is inventory
+        Format(for existed products): receiver , order, quantity , upc , productName(separate by “ , ”)
+        e.g. receiver , order , 100 , 072385901722 , Beef
+ Case2: Manually order new Product which does not exist in inventory before
+        Format(for new products): receiver , order, quantity , upc , productName , distributor(separate by “ , ”)
+        e.g. receiver , order , 100 , 03383300528 , Pear , Fruit Grocery
+        (Pear does not exist in inventory before, it is a new Product)
+
+Notice:
+Since the handout said everyone can manually order products,
+so we will only show one example of order by receiver.
+And the rest people could do it by simply change the employee type at the start of the sentence.
+
+For cashier:
+1.cashier could scan out exited products
+Format : cashier , scan-out , quantity , upc , productName (separate by “ , ”)
+e.g. cashier , scan-out , 10 , 072385901722 , Beef
+which means cashier scan out 10 units of Beef.
+Notice: You should not scan-out the items that are not in store and scan
+more quantity than the inventory has.
+
+2.cashier could check sale date for exited products
+Format : cashier , check-date , upc (separate by “ , ”)
+e.g. cashier , check-date , 072385901722
+which means cashier check the sale date period of product with upc 072385901722
+Notice: You should not check sale date of the items that are not in store.
+
+For reshelver
+1.reshelver could view all existed products’ location (which aisle they belong to)
+Format : receiver , view-location , productName (separate by “ , ”)
+e.g. reshelver , view-location , Pork
+which means reshelver will find where is the Pork in the inventory.
+Notice: You should not view the location of the items that are not in store.
+
+2.reshelver could change the location of all exited products
+Format : receiver , change-location , productName (separate by “ , ”)
+e.g. reshelver , view-location , Pork , Aisle 2
+which means reshelver will change the location of Pork to Aisle 2.
+Notice: You should not change the location of the items that are not in store
+and change the location of product to the original aisle it belongs to.
+
+3.reshelver could view all exited products’ quantity
+Format : reshelver , view-quantity , productName (separate by “ , ”)
+e.g. reshelver , view-quantity , Pork
+which means reshelver will find how many units of Pork in the inventory.
+Notice: You should not view the quantity of the items that are not in store.
+
+4.reshelver could view the total order history.
+Format : reshelver , view-total-order-history (separate by “ , ”)
+e.g. reshelver , view-total-order-history
+which means reshelver will view the total order history of the store.
+
+5.reshelver could view one specific product's order history.
+Format : reshelver , view-order-history, productName (separate by “ , ”)
+e.g. reshelver , view-order-history, Beef
+which means reshelver will view the order history of the Beef.
+
+6.reshelver could insert new section under existed sections with any existed subsections.
+Format : reshelver , insert-section-on-section , newSectionName , ParentSectionName , subsections(as many as you want) (separate by “ , ”)
+e.g. reshelver , insert-section-on-section , HealthyFood , Food , Fruit , Vegetable
+which means reshelver insert the new section named HealthyFood under Food section
+and HealthyFood has Fruit , Vegetable as subsections.
+
+7.reshelver could insert new section under existed sections with any existed products.
+Format : reshelver , insert-section-on-product , newSectionName , ParentSectionName , productNames(as many as you want) (separate by “ , ”)
+e.g. reshelver , insert-section-on-product , RawMeat , Meat , Beef
+which means reshelver insert the new section named RawMeat under Food section and now Beef's supsection is RawMeat now.
+
+For manager
+1.manager could view the daily revenue of the store
+Format : manager , view-revenue (separate by “ , ”)
+e.g. manager , view-revenue
+which means manager will view the daily revenue of the store.
+
+2.manager could view the daily profit of the store
+Format : manager , view-profit (separate by “ , ”)
+e.g. manager , view-profit
+which means manager will view the daily profit of the store.
+
+3.manager could view the pending order list.
+Format : manager , view-pending-order (separate by “ , ”)
+e.g. manager , view-pending-order
+which means manager will view the pending order list.
+
+4.manager could change the price of products.
+Format : manager , change-price , productName , NewPrice (separate by “ , ”)
+e.g. manager , change-price , Beef , 20
+which means manager will change the Beef’s price to 20.
+
+5.manager could make sale of given product.
+Format: manager , set-discount , productName , discount-ratio , start-date , end-date
+e.g. manager , set-discount , Bed , 0.5 , 2017-01-05 , 2017-01-07
+which means manger will set the Bed in sale and the discount ratio is 0.5
+and the sale period is from 2017-01-05 to 2017-01-07.

@@ -1,0 +1,22 @@
+Inventory , Food , Tool , Furniture
+Food , Meat , Vegetable , Fruit
+Tool , Cleaning Tool , Kitchen Tool , Painting Tool
+Furniture , Bedroom , Living Room , Washroom
+***** Aisle *****
+Aisle 1
+Aisle 2
+Aisle 3
+Aisle 4
+Aisle 5
+***** Product *****
+40 , 064992510121 , Pork , 6 , 10 , Meat , 20 , Aisle 1 , Butcher
+50 , 072385901722 , Beef , 10 , 15 , Meat , 30 , Aisle 1 , Butcher
+60 , 015000076009 , Carrot , 2 , 5 , Vegetable , 35 , Aisle 2 , Green Grocery
+55 , 033383004693 , Apple , 1 , 2 , Fruit , 20 , Aisle 3 , Fruit Grocery
+40 , 033486390212 , Banana , 2 , 3.5 , Fruit , 30 , Aisle 4 , Fruit Grocery
+30 , 071798007007 , Broom , 5 , 10 , Cleaning Tool , 10 , Aisle 1 , Canadian Tire
+40 , 078731350947 , Spoon , 3 , 5 , Kitchen Tool , 20 , Aisle 3 , Canadian Tire
+35 , 736658980364 , Brush , 7 , 10 , Painting Tool , 15 , Aisle 3 , Canadian Tire
+20 , 027773009825 , Bed , 90 , 200 , Bedroom , 10 , Aisle 2 , Sleep Country
+25 , 847254089571 , Sofa , 200 , 350 , Living Room , 15 , Aisle 4 , Sleep Country
+10 , 032578274892 , Bathtub , 150 , 300 , Washroom , 5 , Aisle 5 , Canadian Tire
