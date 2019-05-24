@@ -1,0 +1,92 @@
+#########
+# Step 1
+
+Code affected: none
+
+Created this file.
+#########
+# Step 2
+
+Code affected: all .java files
+
+Reformatted using the Google Java style formatter.
+#########
+# Step 5
+
+Code affected: CornerRail,Rail,NERail,NWRail,SERail,SWRail,Car,Track.java files
+
+Flaw: Inappropriate Inheritance
+
+Fix: Generate CornerRail in its own class and reformat all the correlated variable in other classes.
+#########
+# Step 6
+
+Code affected: StraightRail,NSRail,EWRail,Track,Car,CornerRail,TwoEndRail.java files
+
+Flaw: Inappropriate Inheritance & Styles
+
+Fix: Generate StraightRail in its own class and reformat all the correlated variable in other classes.
+(Also Fix some style problems from previous steps after running CheckStyle)
+#########
+# Step 7
+
+Code affected: SwitchRail,Track,EWNRail,EWSRail,NSERail,NSWRail,Rail,SNERail,SNWRail,StraightRail,
+WENRail,WESRail,CornerRail,Car,Track.java files
+
+Flaw: Inappropriate Inheritance & Styles
+
+Fix: Generate SwitchRail in its own class and reformat all the correlated variable in other classes.
+(Also Fix some style problems from previous steps after running CheckStyle)
+#########
+# Step 8
+
+Code affected: Caboose,Car,Engine,Rail,Train,TrainSimulation.java files
+
+Flaw: Inappropriate Inheritance
+
+Fix: Generate Caboose&Engine variable in Car class and reformat all the correlated variable in
+ other classes. (Also Fix some style problems from previous steps after running CheckStyle)
+#########
+# Step 9
+
+Code affected: Car,Rail,Train,TrainSimulation.java files
+
+Flaw: Cars Crash
+
+Fix: Change the move method in Train class.
+#########
+# Step 10
+
+Code affected: Car,CornerRail,Rail,SwitchRail,TwoEndRail,Train,Track.java files
+
+Flaw: SwitchRails don't work.
+
+Fix: Fix all related methods in SwitchRails.(i.e. move, exit, nextRail...)
+#########
+# Step 11
+
+Code affected: Car,CornerRail,Train,TrainSimulation.java files
+
+Flaw: Weight didn't influence the speed of train.
+
+Fix: Add weight to the train while adding new cars and make it influence the speed of the train.
+#########
+# Step 12
+Code affected: all the java files that have been commented, but not delete yet.
+
+Flaw: Inappropriate Inheritance
+
+Fix: Delete all the files that is not useful any more.
+#########
+# Step 13
+Code affected: all the java files.
+
+Flaw: Missing JavaDoc&Comments.
+
+Fix: Finalize Javadoc&Comments.
+#########
+# Step 14
+
+- Add 7 new rails to the track
+- Delete some method that never use
+- Finally finish this assignment :)
